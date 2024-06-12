@@ -1,0 +1,25 @@
+model: mlp
+
+# Dataset
+data_path: datasets/coraa-ser  # Path to the dataset
+class_labels: ["neutral", "non-neutral-female", "non-neutral-male"]  # Emotion labels
+# class_labels: ["positive", "negative", "neutral"]
+# class_labels: ["angry", "boredom", "disgust", "fear", "happy", "neutral", "sad"]
+
+# Features
+feature_folder: features/6-category/opensmile_coraa/  # Folder to store features
+feature_method: o  # 'o': opensmile, 'l': librosa  # Feature extraction method
+
+# Opensmile configuration, only needed when 'feature_method: o' is set
+opensmile_config: IS10_paraling  # Opensmile standard feature set
+opensmile_path: /home/lettuce/code/extra/opensmile-2.3.0 # Path to Opensmile installation
+
+# Checkpoints
+checkpoint_path: checkpoints/  # Path to store checkpoints
+checkpoint_name: MLP_OPENSMILE_IS10  # Checkpoint filename
+
+# Model parameters
+params: {
+  alpha: 1.9,
+  max_iter: 700
+}
