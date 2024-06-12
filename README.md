@@ -94,5 +94,5 @@ python predict.py --config configs/example.yaml
 
 ### Acknowledgments
 
-  - Based on [Renovamen/Speech-Emotion-Recognition](https://github.com/Renovamen/Speech-Emotion-Recognition/blob/master/utils/plot.py)
+  - Based on [Renovamen/Speech-Emotion-Recognition](https://github.com/Renovamen/Speech-Emotion-Recognition)
   - [CORAA SER PT Dataset](https://www.icmc.usp.br/eventos/5802-coraa-ser-v1-um-dataset-para-tarefas-de-reconhecimento-de-emocoes-a-partir-de-fala-espontanea-para-o-portugues-brasileiro)
