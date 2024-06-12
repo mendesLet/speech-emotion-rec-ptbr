@@ -16,7 +16,7 @@ def train(config) -> None:
 
     print('----- start training', config.model, '-----')
     if config.model in ['lstm', 'cnn1d', 'cnn2d']:
-        y_train, y_val = to_categorical(y_train), to_categorical(y_val)
+        y_train, y_val = to_categorical(y_train), to_categorical(y_test)
         model.train(
             x_train, y_train, x_test, y_val,
             batch_size = config.batch_size,
